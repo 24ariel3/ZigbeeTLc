@@ -13,7 +13,7 @@
 
 #define ZIGBEE_TUYA_OTA 	1
 
-#define RF_TX_POWER_DEF		RF_POWER_INDEX_P3p01dBm
+#define RF_TX_POWER_DEF		RF_POWER_INDEX_P10p46dBm //RF_POWER_INDEX_P3p01dBm
 
 // TLSR825x 1M Flash
 // GPIO_PA7 - SWS, free, (debug TX)
@@ -32,7 +32,7 @@
 
 // I2C
 #define I2C_CLOCK	400000 // Hz
-#define SENSOR_TYPE SENSOR_CHT8305
+#define SENSOR_TYPE SENSOR_SHT30
 #define USE_SENSOR_ID	0
 
 #define I2C_SCL 	GPIO_PC2

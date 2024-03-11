@@ -1,4 +1,4 @@
-@set TLSDK=D:\MCU\TelinkIoTStudio
+@set TLSDK=S:\Programs\TelinkIoTStudio
 @set PATH=%TLSDK%\bin;%TLSDK%\opt\tc32\bin;%TLSDK%\mingw\bin;%TLSDK%\opt\tc32\tc32-elf\bin;%PATH%
 @set SWVER=_v0120
 @rem del /Q .\bin

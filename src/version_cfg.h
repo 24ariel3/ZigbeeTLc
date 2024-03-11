@@ -67,9 +67,9 @@
 //#define BOARD_THB3				26 // https://github.com/pvvx/THB2
 
 /* Board define */
-#ifndef BOARD
-#define BOARD					BOARD_TH03Z // BOARD_LYWSD03MMC or BOARD_CGDK2 or BOARD_MHO_C122 or BOARD_MHO_C401N or BOARD_TS0201_TZ3000 or BOARD_TH03Z
-#endif
+//#ifndef BOARD
+#define BOARD					BOARD_TS0201_TZ3000 // BOARD_LYWSD03MMC or BOARD_CGDK2 or BOARD_MHO_C122 or BOARD_MHO_C401N or BOARD_TS0201_TZ3000 or BOARD_TH03Z
+//#endif
 
 /* Chip IDs */
 #define TLSR_8267				0x00

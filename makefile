@@ -16,7 +16,7 @@ SRC_PATH ?= $(PROJECT_PATH)$(SRC_DIR)
 # TEL_PATH:  Telink SDK - tc32/bin/
 TEL_PATH ?= .
 # SDK_PATH: X:/Telink/tl_zigbee_sdk
-SDK_PATH ?= ./SDK
+SDK_PATH ?= ./SDK/SDK
 SDK_FLAGS := $(SDK_PATH)/zigbee
 # MAKE_PATH: project all make
 MAKE_PATH ?= ./make
@@ -214,7 +214,7 @@ install: $(SDK_FLAGS) $(TC32_PATH)
 
 $(SDK_FLAGS): $(SDK_PATH)
 ifneq ($(SDK_FLAGS),$(wildcard $(SDK_FLAGS)))
-	#@wget -P $(SDK_PATH) http://wiki.telink-semi.cn/tools_and_sdk/Zigbee/Zigbee_SDK.zip
+	@wget -P $(SDK_PATH) http://wiki.telink-semi.cn/tools_and_sdk/Zigbee/Zigbee_SDK.zip
 	@unzip -o $(TEL_PATH)/tools/SDK_Zigbee_v3.6.8.6.zip -d $(SDK_PATH)
 endif
 
