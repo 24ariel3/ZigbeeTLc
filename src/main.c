@@ -26,6 +26,7 @@
 #include "zb_common.h"
 #include "ext_ota.h"
 #include "chip_8258/register.h"
+#include "sensors.h"
 
 extern void user_init(bool isRetention);
 
@@ -73,7 +74,7 @@ int main(void){
 	while(1){
 #if VOLTAGE_DETECT_ENABLE
 		if(clock_time_exceed(tick, 200 * 1000)) { // 200 ms
-			batery_detect();
+			battery_detect();
 			tick = clock_time();
 		}
 #endif
